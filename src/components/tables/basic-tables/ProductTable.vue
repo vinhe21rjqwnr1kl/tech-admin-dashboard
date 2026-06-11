@@ -38,8 +38,8 @@
  <td class="px-4 py-3 border border-gray-300">
   <div class=" overflow-hidden rounded-xl">
     <img
-      :src="'http://127.0.0.1:8000/storage/' + product.img_url"
-      class="w-48 h-48 object-cover "
+      :src="product.image_url"
+      class="w-48 h-48 object-contain "
     />
   </div>
 </td>
