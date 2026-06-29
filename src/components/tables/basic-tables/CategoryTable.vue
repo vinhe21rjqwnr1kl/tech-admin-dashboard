@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Menu></Menu>
              <h1 style="text-align: center;font-size: 20px;">Manage Categories</h1>
 
          <div v-if="loading" class="text-center text-blue-600">Loading categories...</div>

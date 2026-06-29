@@ -271,7 +271,9 @@ const menuGroups = [
         subItems: [
         { name: "Brand Tables", path: "/brand-tables", pro: false },
         {name: "Category Tables", path: "/category-tables", pro: false },
-        {name: "Product Tables", path: "/product-tables", pro: false }
+        {name: "Product Tables", path: "/product-tables", pro: false },
+        {name: "Order Tables", path: "/order-tables", pro: false }
+
 
         ],
       },

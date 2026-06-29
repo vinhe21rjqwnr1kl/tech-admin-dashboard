@@ -71,6 +71,14 @@ const router = createRouter({
       },
     },
     {
+      path: '/order-tables',
+      name: 'Order Tables',
+      component: () => import('../views/Tables/OrderTables.vue'),
+      meta: {
+        title: 'Order Tables',
+      },
+    },
+    {
       path: '/line-chart',
       name: 'Line Chart',
       component: () => import('../views/Chart/LineChart/LineChart.vue'),
