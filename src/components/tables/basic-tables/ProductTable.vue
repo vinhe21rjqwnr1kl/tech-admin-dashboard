@@ -53,7 +53,7 @@
 
     <!-- PRICE -->
     <td class="border border-gray-300 px-4 py-3 font-semibold text-teal-500">
-      {{ product.price }}$
+      {{ formatPrice ( product.price )}}₫
     </td>
 
    
@@ -223,7 +223,7 @@
         <p><b>ID:</b> {{ selectedProduct.id }}</p>
         <p><b>Name:</b> {{ selectedProduct.name }}</p>
         <p><b>Description:</b> {{ selectedProduct.description }}</p>
-        <p><b>Price:</b> {{ selectedProduct.price }}$</p>
+        <p><b>Price:</b> {{formatPrice( selectedProduct.price) }}₫</p>
 
         <p><b>Category:</b> {{ selectedProduct.category?.name }}</p>
         <p><b>Brand:</b> {{ selectedProduct.brand?.name }}</p>
@@ -283,6 +283,9 @@ export default {
     
   },
   methods: {
+  formatPrice(price) {
+    return new Intl.NumberFormat('vi-VN').format(price);
+  },
   handleFileChange(e) {
   const file = e.target.files[0];
 
